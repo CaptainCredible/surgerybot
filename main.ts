@@ -1,3 +1,8 @@
+input.onLogoEvent(TouchButtonEvent.Pressed, function() {
+    pins.servoWritePin(servoPin, 180)
+    basic.pause(1000)
+    pins.servoWritePin(servoPin, 0)
+})
 //music.playMelody(music.builtInMelody., 120)
 radio.setGroup(5)
 basic.showLeds(`
